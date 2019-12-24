@@ -1,0 +1,36 @@
+﻿@model IEnumerable<FakturiFirst.Faktura>
+
+@{
+    ViewBag.Title = "Почетна";
+    Layout = "~/Views/Dashboard/_Layout.cshtml";
+}
+
+<h4>Добредојдовте!</h4>
+<table>
+    <tbody>
+        @foreach (var item in Model)
+            {
+            <tr class="rows-design">
+                <td class="left-black">
+
+                </td>
+                <td>
+                    <div class="pull-right">
+                        <h4>Фактура #@item.Faktura_ID</h4>
+                        <div>
+                            <div>Вкупно: @item.Faktura_Suma</div>
+                            <div class="pull-right">Датум издавање: @item.Faktura_DatumIzdavanje</div>
+                            <div class="pull-right">Датум доспевање: @item.Faktura_DatumDospevanje</div>
+                            <hr />
+                        </div>
+                        
+                    </div>
+                </td>
+
+            </tr>
+
+            }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,83 @@
+﻿@model FakturiFirst.Client
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Dashboard/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_TFN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_TFN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Signature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Signature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_CityPostCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_CityPostCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Client_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
